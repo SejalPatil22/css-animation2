@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        .container{
+            background-color:rgb(204, 42, 110);
+            height: 90vh;
+            width: 90vw;
+            position: relative;
+        }
+        .ball{
+            height: 150px;
+            width: 150px;
+            background-color: rgb(41, 3, 16);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 30px;
+            border-radius: 70px;
+            
+            text-align: center;
+            animation:patil 1s cubic-bezier(0, 0, 0.47, 1.07)  infinite alternate,
+                      sejal 4s cubic-bezier(0, 0, 0.47, 1.07) 1s 4 forwards;
+                       
+        }
+        @keyframes sejal {
+            to{
+                right: 0;
+
+            }
+            from{
+                right: 100%;
+            }
+            
+        }
+        @keyframes patil {
+            to{
+                bottom: 0;
+            }
+            from{
+                bottom: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">😂</div>
+
+    </div>
+    
+</body>
+</html>
